@@ -143,7 +143,7 @@ app.get('/trees', function (req, res) {
     var regionBoundingBoxQuery = "";
 
     console.log(zoomLevel);
-    if(zoomLevel >= 10) {
+    if(parseInt(zoomLevel) >= 10) {
       console.log('greater eq 10');
 
       if( bounds ) {
